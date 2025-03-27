@@ -1,0 +1,56 @@
+.usful_info{
+    .cards{
+        margin-top: 70px;
+    }
+
+    &__text{
+        width: 660px;
+        height: 552px;
+        background-image: url(../../asset/img/usful_info/vector.svg);
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        &__title{
+            padding-right: 120px;
+            padding-bottom: 40px;
+            text-align: center;
+            font-size: 18px;
+            line-height: 27px;
+            letter-spacing: 1.08px;
+            color: $primary;
+        }
+
+        &__describe{
+            width: 450px;
+            text-align: center;
+            font-size: 18px;
+            line-height: 27px;
+            padding-right: 120px;
+            letter-spacing: 1.08px;
+        }
+    }
+
+
+    &__cat{
+        padding-top: 320px;
+        width: 290px;
+        height: 250px;
+    }
+
+
+    &__menu{
+        list-style: none;
+    }
+
+    &__item{
+        display: block;
+        cursor: pointer;
+        padding-top: 30px;
+        font-size: 18px;
+        font-weight: 400;
+        text-decoration: none;
+    }
+}

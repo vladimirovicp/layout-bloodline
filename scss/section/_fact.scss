@@ -1,0 +1,74 @@
+.fact{
+      display: none;
+}
+
+@media (min-width: 768px) {
+    .fact{
+        display: block;
+        &__wrapper{
+            width: 489px;
+            height: 437px;
+            background-image: url(../../asset/img/fact/chat-tablet.svg);
+            position: relative;
+
+            &_text{
+                position: absolute;
+                line-height: normal;
+                font-family: "Jost", sans-serif;
+
+                letter-spacing: 0.72px;
+                width: 320px;
+                font-size: 24px;
+                left: 50px;
+                top: 70px;
+                line-height: 1.2;
+            }
+        }
+
+
+    }
+}
+
+@media (min-width: 1024px) {
+
+    .fact{
+        &__wrapper{
+            width: 700px;
+            height: 284px;
+            background-image: url(../../asset/img/fact/chat-desctop.svg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            top: 60px;
+
+            &_text{
+                position: absolute;
+                top: 45px;
+                left: 30px;
+                width: 480px;
+                font-size: 18px;
+            }
+        }
+    }
+
+}
+
+
+@media (min-width: 1320px) {
+
+    .fact{
+        &__wrapper{
+            width: 1048px;
+            height: 284px;
+            position: relative;
+            top: unset;
+
+            &_text{
+                position: absolute;
+                top: 80px;
+                left: 75px;
+                width: 620px;
+                font-size: 24px;
+            }
+        }
+    }
+}

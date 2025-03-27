@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bloodline</title>
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Imperial+Script&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./fonts/impact/stylesheet.css" />
+  </head>
+  <body>
+    <header class="header header_front">
+      <div class="container">
+        <div class="logo">
+          <div class="logo__img">
+            <picture>
+              <img src="./asset/img/logo.svg" alt="логотип" />
+            </picture>
+          </div>
+          <div class="logo__site-name">Bloodline</div>
+        </div>
+
+        <div class="hamburger-menu">
+          <input id="menu_toggle" type="checkbox" />
+          <label class="menu_btn" for="menu_toggle">
+            <span></span>
+          </label>
+          <ul class="menu_box">
+            <li><a class="menu_item" href="/">Главная</a></li>
+            <li><a class="menu_item" href="#">О нас</a></li>
+            <li>
+              <a class="menu_item" href="/info-donor">Информация о донорстве</a>
+            </li>
+            <li>
+              <a class="menu_item" href="/who-donar"
+                >Кто может стать донором?</a
+              >
+            </li>
+            <li><a class="menu_item" href="#">Где сдать кровь?</a></li>
+            <li><a class="menu_item" href="#">Где достать кровь?</a></li>
+            <li><a class="menu_item" href="#">Как мы ищем кровь?</a></li>
+            <li><a class="menu_item" href="#">Часто задаваемые вопросы</a></li>
+            <li>
+              <a class="menu_item" href="#">Социальные сети и контакты</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="hero">
+        <div class="container">
+          <div class="hero__wrapper">
+            <div class="hero__title">Донорство крови для животных</div>
+            <div class="hero__text">
+              Они не могут сказать "спасибо".<br />
+              Но они точно почувствуют вашу заботу.
+            </div>
+
+            <div class="hero__wrapper-btn">
+              <a href="#" class="btn hero__btn">Стать донором</a>
+              <a href="#" class="btn hero__btn">Нужна кровь</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      
+
+      <section class="version">
+        <div class="container">
+          <h2 class="title">Выберете свой вариант:</h2>
+          <div class="cards">
+            <div class="card card_column">
+              <picture>
+                <img src="/asset/img/version/probirka_1.jpg" alt="" class="version__img-rose"/>
+              </picture>
+
+              <span class="version__line"></span>
+              <div class="version__title">Стать донором</div>
+              <div class="version__describe">
+                Хотите сделать доброе дело и спасти жизнь? <br />
+                Узнайте больше о донорстве крови для животных!
+              </div>
+              <div class="version__wrapper-btn">
+                <a href="#" class="btn version__btn">Подробнее</a>
+              </div>
+            </div>
+            <div class="card card_column">
+              <picture>
+                <img src="/asset/img/version/probirka_2.jpg" alt="пробирка" class="version__img-tube"/>
+              </picture>
+              <span class="version__line"></span>
+              <div class="version__title">Нужна кровь</div>
+              <div class="version__describe">
+                Нужна срочно кровь для вашего питомца? <br />
+                Узнайте как получить необходимую помощь!
+              </div>
+              <div class="version__wrapper-btn">
+                <a href="#" class="btn version__btn">Подробнее</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="fact">
+        <div class="container">
+          <!-- <div class="cards version__offset"> -->
+
+            <div class="cards flex-end">
+              <div class="card">
+                <div class="fact__wrapper">
+                  <div class="fact__wrapper_text">
+                    Каждый шестой владелец больного питомца
+                    в России сталкивается с необходимостью донорской крови для спасения жизни своего любимца.
+                    Ваш вклад может стать решением этой проблемы.
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <img src="/asset/img/fact/bunny.png" alt="зайка" />
+              </div>
+            </div>
+        </div>
+      </section>
+
+
+      
+
+
+
+
+      
+<!--
+      <section class="important">
+        <div class="container">
+          <h2 class="title">
+            Почему ваш питомец может стать <br />
+            донором и помочь другим животным?
+          </h2>
+
+          <div class="cards">
+            <div class="card card_column">
+              <picture>
+                <img src="/asset/img/important/heart.jpg" alt="важно" />
+              </picture>
+              <span class="important__line"></span>
+              <div class="important__title">Спасти жизни</div>
+              <div class="important__describe">
+                Донорская кровь может спасти жизни животным, которые <br />
+                пострадали от травм, операций или страдают от серьезных <br />
+                заболеваний.
+              </div>
+            </div>
+            <div class="card card_column">
+              <picture>
+                <img src="/asset/img/important/text.jpg" alt="важный текст" />
+              </picture>
+              <span class="important__line"></span>
+              <div class="important__title">Мониторинг здоровья</div>
+              <div class="important__describe">
+                Регулярные ветеринарные осмотры и бесплатный анализ крови <br />
+                помогут вам спасти жизни не только других животных, но и <br />
+                вашего питомца!
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="donors">
+        <div class="container">
+          <h2 class="title">Кто может стать донором?</h2>
+          <div class="cards">
+            <div class="donors__box">
+              <picture>
+                <img src="/asset/img/donors/dog.svg" alt="донор_собака" />
+              </picture>
+              <div class="donors__wrapper-btn">
+                <a href="#" class="btn donors__btn">Собака</a>
+              </div>
+            </div>
+            <div class="donors__box">
+              <picture>
+                <img src="/asset/img/donors/cat.svg" alt="донор_кошка" />
+              </picture>
+              <div class="donors__wrapper-btn">
+                <a href="#" class="btn donors__btn">Кошка</a>
+              </div>
+            </div>
+            <div class="donors__box">
+              <picture>
+                <img src="/asset/img/donors/rabbit.svg" alt="донор_кролик" />
+              </picture>
+              <div class="donors__wrapper-btn">
+                <a href="#" class="btn donors__btn">Кролик</a>
+              </div>
+            </div>
+            <div class="donors__box">
+              <picture>
+                <img src="/asset/img/donors/parrot.svg" alt="донор_попугай" />
+              </picture>
+              <div class="donors__wrapper-btn">
+                <a href="#" class="btn donors__btn">Попугай</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="usful_info">
+        <div class="container">
+          <h2 class="title">Полезная информация</h2>
+          <div class="cards">
+            <div class="card card_column">
+              <ul class="usful_info__menu" id="usful_info__menu">
+                <li data-id="0" class="active">
+                  <a class="usful_info__item">Почему важно сдавать кровь?</a>
+                </li>
+                <li data-id="1">
+                  <a class="usful_info__item"
+                    >Сколько по времени занимает донация?</a
+                  >
+                </li>
+                <li data-id="2">
+                  <a class="usful_info__item"
+                    >Нужно держать питомца во время донации?</a
+                  >
+                </li>
+                <li data-id="3">
+                  <a class="usful_info__item">Безопасно ли это?</a>
+                </li>
+                <li data-id="4">
+                  <a class="usful_info__item">Кровь берётся под наркозом?</a>
+                </li>
+                <li data-id="5">
+                  <a class="usful_info__item"
+                    >Как часто сдаётся донорская кровь?</a
+                  >
+                </li>
+                <li data-id="6">
+                  <a class="usful_info__item">Как вы находите доноров?</a>
+                </li>
+                <li data-id="7">
+                  <a class="usful_info__item"
+                    >Требуется ли подготовка питомца к донации?</a
+                  >
+                </li>
+                <li data-id="8">
+                  <a class="usful_info__item"
+                    >За какое время у питомца восполняется кровь?</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="usful_info__text">
+              <div class="usful_info__text__title">
+                Почему важно сдавать кровь?
+              </div>
+              <div class="usful_info__text__describe">текст 1</div>
+            </div>
+            <div class="usful_info__cat">
+              <img src="/asset/img/usful_info/cat.png" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="about_us">
+        <div class="container">
+          <div class="card about_us__offset">
+            <div class="cards card_column">
+              <h2 class="title">О нас</h2>
+              <div class="about_us__describe">
+                Сайт
+                <font face="Imperial Script" size="6">«Bloodline»</font>
+                позволяет владельцам питомцев размещать обращения о
+                необходимости донорской крови, быстро распространяя их по
+                соцсетям и объединяя людей для спасения животных в критических
+                ситуациях.
+              </div>
+              <img src="/asset/img/about_us/logo.svg" />
+            </div>
+            <div class="about_us__box">
+              <h2 class="title">Получите бесплатную консультацию</h2>
+              <div class="about_us__tel">
+                <input
+                  type="tel"
+                  class="about_us__tel__phone"
+                  placeholder="Телефон"
+                  maxlength="18"
+                  pattern="\d*"
+                />
+              </div>
+              <div class="about_us__check-policy">
+                <input type="checkbox" class="about_us__checkbox" />
+                <label class="about_us__describe"
+                  >Согласен на обработку персональных <br />
+                  данных</label
+                >
+              </div>
+              <div class="about_us__wrapper-btn">
+                <a href="#" class="btn about_us__btn disabled"
+                  >Получить консультацию</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      -->
+    </main>
+
+    <!--
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__wrapper">
+          <div class="footer__data">
+            <div class="footer__contacts">
+              <div class="footer__contacts-title">Контактные данные:</div>
+              <div class="footer__contacts-item">
+                <div class="footer__contacts-img">
+                  <picture>
+                    <img src="./asset/img/footer/phone.svg" alt="Phone" />
+                  </picture>
+                </div>
+                <div class="footer__contacts-data">
+                  <a href="tel:86334535633"> 8(633)453-56-33 </a>
+                </div>
+              </div>
+
+              <div class="footer__contacts-item">
+                <div class="footer__contacts-img">
+                  <picture>
+                    <img src="./asset/img/footer/email.svg" alt="Mail" />
+                  </picture>
+                </div>
+                <div class="footer__contacts-data">
+                  <a href="mailto:vetclikpet@mail.ru"> vetclikpet@mail.ru </a>
+                </div>
+              </div>
+            </div>
+            <div class="footer__social">
+              <a href="#" target="_blank" class="social-icon">
+                <picture>
+                  <img src="./asset/img/footer/telegram.svg" alt="Telegram" />
+                </picture>
+              </a>
+              <a href="#" target="_blank" class="social-icon">
+                <picture>
+                  <img src="./asset/img/footer/VK.svg" alt="VK" />
+                </picture>
+              </a>
+              <a href="#" target="_blank" class="social-icon">
+                <picture>
+                  <img src="./asset/img/footer/instagram.svg" alt="Instagram" />
+                </picture>
+              </a>
+            </div>
+          </div>
+
+          <div class="logo">
+            <div class="logo__img">
+              <picture>
+                <img src="/asset/img/logo.svg" alt="логотип" />
+              </picture>
+            </div>
+            <div class="logo__site-name">Bloodline</div>
+          </div>
+        </div>
+        <div class="footer__info">
+          <div>При поддержке гранта «Умный Сон»</div>
+          <div>©2024г.</div>
+        </div>
+      </div>
+    </footer>
+    -->
+    <script src="/asset/js/script.js"></script>
+  </body>
+</html>

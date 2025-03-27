@@ -1,0 +1,28 @@
+.participation {
+  .cards {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 50px 10px;
+  }
+
+  .card {
+    width: 48%;
+    position: relative;
+    padding-left: 100px;
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+
+    &::before {
+      content: "";
+      width: 90px;
+      height: 100px;
+      position: absolute;
+      display: block;
+      left: 0;
+      background-image: url(../../asset/img/participation/daw.svg);
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+  }
+}

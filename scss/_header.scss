@@ -1,0 +1,95 @@
+.header {
+  background: $dark;
+  color: $white;
+  .container {
+    .logo {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      z-index: 2;
+      &__site-name {
+        font-size: 24px;
+        line-height: 1;
+        font-family: "Imperial Script", cursive;
+        font-weight: 400;
+        letter-spacing: 1.44px;
+        font-style: normal;
+      }
+    }
+    height: 102px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &_front{
+    .container {
+      background-image: url(../asset/img/hero/background-mobile.jpg);
+      background-position: top center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      
+    }
+  }
+}
+
+@media(min-width:320px){
+  .header {
+    &_front{
+      .container {
+        
+      }
+    }
+  }
+}
+
+@media(max-width:768px){
+  .header{
+    .container {
+      .logo {
+        &__img{
+          width: 26px;
+          img{
+            width: 26px;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media (min-width: 768px) {
+  .header{
+    .container{
+      background-image: url(../../asset/img/hero/background-tablet.jpg);
+    }
+    .logo {
+      &__site-name {
+        
+      }
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .header{
+    .container {
+      background-image: url(../../asset/img/hero/background.jpg);
+      background-size: unset;
+      .logo {
+        gap: 18px;
+        &__site-name {
+          font-size: 64px;
+          line-height: 77px;
+          font-family: "Imperial Script", cursive;
+          font-weight: 400;
+          letter-spacing: 3.84px;
+          font-style: normal;
+        }
+      }
+    }
+  }
+
+  
+}

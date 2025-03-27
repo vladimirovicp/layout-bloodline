@@ -1,0 +1,20 @@
+.who-donar {
+  .container {
+  }
+
+  .cards {
+    padding-bottom: 40px;
+  }
+
+  .card {
+    &-info {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      padding-right: 50px;
+      ol {
+        line-height: 2;
+      }
+    }
+  }
+}
