@@ -14,7 +14,7 @@ const data = {
 const section_usful_info = document.querySelector('.usful_info');
 
 
-
+/*
 if(section_usful_info){
 
 
@@ -22,13 +22,13 @@ if(section_usful_info){
     const usful_info__text__title = usful_info__text.querySelector('.usful_info__text__title');
     const usful_info__text__describe = usful_info__text.querySelector('.usful_info__text__describe');
 
-
+*/
 
 
     // ---------------------------------------------------------------------------------------------------
 
 
-
+/*
     const usful_info__menu = section_usful_info.querySelector('.usful_info__menu');
     const usful_info__list = usful_info__menu.querySelectorAll('li');
     usful_info__list.forEach( el =>{
@@ -47,7 +47,7 @@ if(section_usful_info){
     });
  
 }
-
+*/
 
 
 const menuToggle = document.querySelector('#menu_toggle')
@@ -118,3 +118,35 @@ if(section_about_us){
         updateButtonState();
     });
 }
+
+
+
+// accordion start
+
+document.addEventListener('DOMContentLoaded', function() {
+    const accordionHeaders = document.querySelectorAll('.accordion-header');
+
+    if (accordionHeaders){
+        accordionHeaders.forEach(header => {
+            header.addEventListener('click', function() {
+                // Закрываем все открытые разделы, кроме текущего
+                const currentlyActive = document.querySelector('.accordion-header.active');
+                if (currentlyActive && currentlyActive !== header) {
+                    currentlyActive.classList.remove('active');
+                    currentlyActive.nextElementSibling.classList.remove('active');
+                }
+                
+                // Переключаем текущий раздел
+                header.classList.toggle('active');
+                const content = header.nextElementSibling;
+                content.classList.toggle('active');
+                
+            });
+        });
+        
+        // Опционально: открыть первый раздел по умолчанию
+        accordionHeaders[0].click();
+    }
+    
+
+});

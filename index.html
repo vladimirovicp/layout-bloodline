@@ -213,25 +213,80 @@
       </section>
 
 
-      <!-- https://codepen.io/xaku666/pen/dyVbQJm -->
-
-      <section class="usful_info">
+      <section class="usful-info">
         <div class="container">
           <h2 class="title">Полезная информация</h2>
           <div class="cards">
-            <div class="card card_column accordion">
+            <div class="card card_column">
 
-              <dl>
-                <dt>
-                  <a href="#accordion1" aria-expanded="false" aria-controls="accordion1" class="accordion-title is-collapsed accordionTitle js-accordionTrigger">Почему важно сдавать кровь?</a>
-                </dt>
-                <dd>
-                  <dd class="accordion-content accordionItem is-collapsed is-expanded" id="accordion1" aria-hidden="true">
-                    <div class="accordion__title">Сколько по времени занимает донация?</div>
-                    <div class="accordion__text">У собак донация занимает примерно 30-40 минут, а у кошек 15-20 минут. Кровь у животных берется без наркоза, т.к. это абсолютно безболезненная процедура.</div>
-                  </dd>
-                </dd>
-              </dl>
+              <div class="accordion">
+                <div class="accordion-item">
+                  <div class="accordion-header">Почему важно сдавать кровь?</div>
+                  <div class="accordion-content">
+                      У собак донация занимает примерно 30-40 минут, а у кошек 15-20 минут. Кровь у животных берется без наркоза, т.к. это абсолютно безболезненная процедура.
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <div class="accordion-header">Сколько по времени занимает донация?</div>
+                  <div class="accordion-content">
+                    У собак донация занимает примерно 30-40 минут, а у кошек 15-20 минут. Кровь у животных берется без наркоза, т.к. это абсолютно безболезненная процедура.
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <div class="accordion-header">Нужно держать питомца во время донации?</div>
+                  <div class="accordion-content">
+                    У собак донация занимает примерно 30-40 минут, а у кошек 15-20 минут. Кровь у животных берется без наркоза, т.к. это абсолютно безболезненная процедура.
+                  </div>
+                </div>
+
+
+                <div class="accordion-item">
+                  <div class="accordion-header">Безопасно ли это?</div>
+                  <div class="accordion-content">
+                    У собак донация занимает примерно 30-40 минут, а у кошек 15-20 минут. Кровь у животных берется без наркоза, т.к. это абсолютно безболезненная процедура.
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <div class="accordion-header">Кровь берётся под наркозом?</div>
+                  <div class="accordion-content">
+                    У собак донация занимает примерно 30-40 минут, а у кошек 15-20 минут. Кровь у животных берется без наркоза, т.к. это абсолютно безболезненная процедура.
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <div class="accordion-header">Как часто сдаётся донорская кровь?</div>
+                  <div class="accordion-content">
+                    У собак донация занимает примерно 30-40 минут, а у кошек 15-20 минут. Кровь у животных берется без наркоза, т.к. это абсолютно безболезненная процедура.
+                  </div>
+                </div>
+
+              <div class="accordion-item">
+                <div class="accordion-header">Как вы находите доноров?</div>
+                <div class="accordion-content">
+                  У собак донация занимает примерно 30-40 минут, а у кошек 15-20 минут. Кровь у животных берется без наркоза, т.к. это абсолютно безболезненная процедура.
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <div class="accordion-header">Требуется ли подготовка питомца к донации?</div>
+                <div class="accordion-content">
+                  У собак донация занимает примерно 30-40 минут, а у кошек 15-20 минут. Кровь у животных берется без наркоза, т.к. это абсолютно безболезненная процедура.
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <div class="accordion-header">За какое время у питомца восполняется кровь?</div>
+                <div class="accordion-content">
+                  У собак донация занимает примерно 30-40 минут, а у кошек 15-20 минут. Кровь у животных берется без наркоза, т.к. это абсолютно безболезненная процедура.
+                </div>
+              </div>
+
+
+            </div>
+
 
 
               <!-- <ul class="usful_info__menu" id="usful_info__menu">
@@ -275,71 +330,31 @@
               </ul> -->
             </div>
 
+            <div class="card usful-info__text">
+              <div class="wrapper">
+                <div class="data">
+                  <div class="data__title">
+                    Почему важно сдавать кровь?
+                  </div>
+                  <div class="data__text">
+                    У собак донация занимает примерно 30-40 минут, а у кошек 15-20 минут. Кровь у животных берется без наркоза, т.к. это абсолютно безболезненная процедура.
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="card usful-info__person">
+              <picture>
+                <img src="/asset/img/usful_info/person.png"  alt=""/>
+              </picture>
+            </div>
+
           </div>
         </div>
       </section>
 
-      <script>
-        (function(){
-	var d = document,
-	accordionToggles = d.querySelectorAll('.js-accordionTrigger'),
-	setAria,
-	setAccordionAria,
-	switchAccordion,
-  touchSupported = ('ontouchstart' in window),
-  pointerSupported = ('pointerdown' in window);
-  
-  skipClickDelay = function(e){
-    e.preventDefault();
-    e.target.click();
-  }
 
-		setAriaAttr = function(el, ariaType, newProperty){
-		el.setAttribute(ariaType, newProperty);
-	};
-	setAccordionAria = function(el1, el2, expanded){
-		switch(expanded) {
-      case "true":
-      	setAriaAttr(el1, 'aria-expanded', 'true');
-      	setAriaAttr(el2, 'aria-hidden', 'false');
-      	break;
-      case "false":
-      	setAriaAttr(el1, 'aria-expanded', 'false');
-      	setAriaAttr(el2, 'aria-hidden', 'true');
-      	break;
-      default:
-				break;
-		}
-	};
-//function
-switchAccordion = function(e) {
-  console.log("triggered");
-	e.preventDefault();
-	var thisAnswer = e.target.parentNode.nextElementSibling;
-	var thisQuestion = e.target;
-	if(thisAnswer.classList.contains('is-collapsed')) {
-		setAccordionAria(thisQuestion, thisAnswer, 'true');
-	} else {
-		setAccordionAria(thisQuestion, thisAnswer, 'false');
-	}
-  	thisQuestion.classList.toggle('is-collapsed');
-  	thisQuestion.classList.toggle('is-expanded');
-		thisAnswer.classList.toggle('is-collapsed');
-		thisAnswer.classList.toggle('is-expanded');
- 	
-  	thisAnswer.classList.toggle('animateIn');
-	};
-	for (var i=0,len=accordionToggles.length; i<len; i++) {
-		if(touchSupported) {
-      accordionToggles[i].addEventListener('touchstart', skipClickDelay, false);
-    }
-    if(pointerSupported){
-      accordionToggles[i].addEventListener('pointerdown', skipClickDelay, false);
-    }
-    accordionToggles[i].addEventListener('click', switchAccordion, false);
-  }
-})();
-      </script>
       
       <!-- <section class="usful_info">
         <div class="container">

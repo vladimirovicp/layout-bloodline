@@ -13,7 +13,7 @@ body {
   padding: 0;
 
   font-family: "Mulish", sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
   font-style: normal;
 
@@ -107,6 +107,42 @@ body {
 }
 
 
+// start accordion
+
+.accordion-item {
+  overflow: hidden;
+  padding-bottom: 18px;
+}
+
+.accordion-header {
+  cursor: pointer;
+  transition: background-color 0.3s;
+  padding-bottom: 10px;
+  text-decoration: none;
+}
+
+.accordion-header.active {
+  text-decoration: underline;
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  border: 0 solid #522912;
+  transition: max-height 0.5s ease-out, padding 0.5s ease, border 0.5s ease-in-out;
+}
+
+.accordion-content.active {
+  padding: 18px;
+  max-height: 500px; /* Достаточно большое значение для контента */
+  color: $dark;
+  border: 1px solid #522912;
+
+}
+
+// end accordion
+
+
 @media (hover: hover) {
   .btn {
     transition: background-color 0.5s ease-in-out;
@@ -117,6 +153,10 @@ body {
 }
 
 @media (min-width: 768px) {
+
+  body {
+    font-size: 18px;
+  }
 
   .title {
     font-size: 40px;
