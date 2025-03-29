@@ -212,8 +212,136 @@
         </div>
       </section>
 
-      <!--
+
+      <!-- https://codepen.io/xaku666/pen/dyVbQJm -->
+
       <section class="usful_info">
+        <div class="container">
+          <h2 class="title">Полезная информация</h2>
+          <div class="cards">
+            <div class="card card_column accordion">
+
+              <dl>
+                <dt>
+                  <a href="#accordion1" aria-expanded="false" aria-controls="accordion1" class="accordion-title is-collapsed accordionTitle js-accordionTrigger">Почему важно сдавать кровь?</a>
+                </dt>
+                <dd>
+                  <dd class="accordion-content accordionItem is-collapsed is-expanded" id="accordion1" aria-hidden="true">
+                    <div class="accordion__title">Сколько по времени занимает донация?</div>
+                    <div class="accordion__text">У собак донация занимает примерно 30-40 минут, а у кошек 15-20 минут. Кровь у животных берется без наркоза, т.к. это абсолютно безболезненная процедура.</div>
+                  </dd>
+                </dd>
+              </dl>
+
+
+              <!-- <ul class="usful_info__menu" id="usful_info__menu">
+                <li data-id="0" class="active">
+                  <a class="usful_info__item">Почему важно сдавать кровь?</a>
+                </li>
+                <li data-id="1">
+                  <a class="usful_info__item"
+                    >Сколько по времени занимает донация?</a
+                  >
+                </li>
+                <li data-id="2">
+                  <a class="usful_info__item"
+                    >Нужно держать питомца во время донации?</a
+                  >
+                </li>
+                <li data-id="3">
+                  <a class="usful_info__item">Безопасно ли это?</a>
+                </li>
+                <li data-id="4">
+                  <a class="usful_info__item">Кровь берётся под наркозом?</a>
+                </li>
+                <li data-id="5">
+                  <a class="usful_info__item"
+                    >Как часто сдаётся донорская кровь?</a
+                  >
+                </li>
+                <li data-id="6">
+                  <a class="usful_info__item">Как вы находите доноров?</a>
+                </li>
+                <li data-id="7">
+                  <a class="usful_info__item"
+                    >Требуется ли подготовка питомца к донации?</a
+                  >
+                </li>
+                <li data-id="8">
+                  <a class="usful_info__item"
+                    >За какое время у питомца восполняется кровь?</a
+                  >
+                </li>
+              </ul> -->
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <script>
+        (function(){
+	var d = document,
+	accordionToggles = d.querySelectorAll('.js-accordionTrigger'),
+	setAria,
+	setAccordionAria,
+	switchAccordion,
+  touchSupported = ('ontouchstart' in window),
+  pointerSupported = ('pointerdown' in window);
+  
+  skipClickDelay = function(e){
+    e.preventDefault();
+    e.target.click();
+  }
+
+		setAriaAttr = function(el, ariaType, newProperty){
+		el.setAttribute(ariaType, newProperty);
+	};
+	setAccordionAria = function(el1, el2, expanded){
+		switch(expanded) {
+      case "true":
+      	setAriaAttr(el1, 'aria-expanded', 'true');
+      	setAriaAttr(el2, 'aria-hidden', 'false');
+      	break;
+      case "false":
+      	setAriaAttr(el1, 'aria-expanded', 'false');
+      	setAriaAttr(el2, 'aria-hidden', 'true');
+      	break;
+      default:
+				break;
+		}
+	};
+//function
+switchAccordion = function(e) {
+  console.log("triggered");
+	e.preventDefault();
+	var thisAnswer = e.target.parentNode.nextElementSibling;
+	var thisQuestion = e.target;
+	if(thisAnswer.classList.contains('is-collapsed')) {
+		setAccordionAria(thisQuestion, thisAnswer, 'true');
+	} else {
+		setAccordionAria(thisQuestion, thisAnswer, 'false');
+	}
+  	thisQuestion.classList.toggle('is-collapsed');
+  	thisQuestion.classList.toggle('is-expanded');
+		thisAnswer.classList.toggle('is-collapsed');
+		thisAnswer.classList.toggle('is-expanded');
+ 	
+  	thisAnswer.classList.toggle('animateIn');
+	};
+	for (var i=0,len=accordionToggles.length; i<len; i++) {
+		if(touchSupported) {
+      accordionToggles[i].addEventListener('touchstart', skipClickDelay, false);
+    }
+    if(pointerSupported){
+      accordionToggles[i].addEventListener('pointerdown', skipClickDelay, false);
+    }
+    accordionToggles[i].addEventListener('click', switchAccordion, false);
+  }
+})();
+      </script>
+      
+      <!-- <section class="usful_info">
         <div class="container">
           <h2 class="title">Полезная информация</h2>
           <div class="cards">
@@ -265,12 +393,15 @@
               <div class="usful_info__text__describe">текст 1</div>
             </div>
             <div class="usful_info__cat">
-              <img src="/asset/img/usful_info/cat.png" />
+              <picture>
+                <img src="/asset/img/usful_info/person.png" />
+              </picture>
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
 
+      <!--
       <section class="about_us">
         <div class="container">
           <div class="card about_us__offset">
