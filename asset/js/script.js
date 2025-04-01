@@ -16,15 +16,11 @@ const section_usful_info = document.querySelector('.usful_info');
 
 /*
 if(section_usful_info){
-
-
     const usful_info__text = section_usful_info.querySelector('.usful_info__text');
     const usful_info__text__title = usful_info__text.querySelector('.usful_info__text__title');
     const usful_info__text__describe = usful_info__text.querySelector('.usful_info__text__describe');
 
 */
-
-
     // ---------------------------------------------------------------------------------------------------
 
 
@@ -48,6 +44,40 @@ if(section_usful_info){
  
 }
 */
+
+const usful_info = document.querySelector('.usful-info');
+
+if(usful_info){
+    const accordion_usful = usful_info.querySelector('.accordion');
+    const usfulInfo__text = usful_info.querySelector('.usful-info__text');
+
+
+    const data_usful = usfulInfo__text.querySelector('.data');
+    const data__title_usful = data_usful.querySelector('.data__title');
+    const  data__text_usful = data_usful.querySelector('.data__text');
+
+
+    const accordion_item_usful = accordion_usful.querySelectorAll('.accordion-item');
+
+
+    accordion_item_usful.forEach( el =>{
+        const accordion_header_usful = el.querySelector('.accordion-header');
+        const accordion_content_usful = el.querySelector('.accordion-content');
+
+
+        accordion_header_usful.addEventListener('click', (e) => {
+            const title = e.target.textContent;
+            const description = accordion_content_usful.textContent;
+
+            data__title_usful.textContent = title;
+            data__text_usful .textContent = description;
+        })
+
+    });
+}
+
+
+
 
 
 const menuToggle = document.querySelector('#menu_toggle')
