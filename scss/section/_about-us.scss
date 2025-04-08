@@ -1,44 +1,32 @@
-.about_us{
-    .card_column{
-        width: 650px;
+.about-us{
+
+    .title{
+        margin: 0 0 15px 0;
+    }
+    .cards{
+        gap: 40px;
     }
 
-    &__offset {
-        padding-bottom: 150px;
-    }
-
-    &__box{
-        margin-left: 50px;
-        width: 650px;
-        height: 530px;
+    &__form{
+        width: 100%;
         border-radius: 5px;
         outline-style: solid;
         outline-width: 1px;
-        h2{
-            margin-top: 80px;
-            margin-bottom: 70px;
+        flex-shrink: 0;
+        padding: 60px 35px;
+        &-describe{
+            padding-bottom: 60px;
         }
     }
 
     img{
-        margin-top: 30px;
+        width: 260px;
+        height: auto;
     }
     
     &__wrapper-btn{
         display: flex;
         justify-content: center;
-    }
-
-    &__btn{
-        width: 311px;
-        height: 58px;
-    }
-
-    &__describe{
-        text-align: left;
-        font-size: 18px;
-        line-height: 23px;
-        letter-spacing: 1.08px;
     }
 
     &__tel{
@@ -74,4 +62,29 @@
     &__checkbox{
         transform: scale(2);
     }
+}
+
+
+@media (min-width: 768px) {
+
+}
+
+@media (max-width: 1024px) {
+    .about-us{
+        .cards{
+            flex-direction: column;
+        }
+    }
+    
+}
+
+@media (min-width: 1024px) {
+
+    .about-us{
+        &__form{
+            width: 650px;
+        }
+       
+    }
+
 }

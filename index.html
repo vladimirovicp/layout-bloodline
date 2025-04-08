@@ -17,14 +17,14 @@
   <body>
     <header class="header header_front">
       <div class="container">
-        <div class="logo">
+        <a href="./" class="logo">
           <div class="logo__img">
             <picture>
               <img src="./asset/img/logo.svg" alt="логотип" />
             </picture>
           </div>
           <div class="logo__site-name">Bloodline</div>
-        </div>
+        </a>
 
         <div class="hamburger-menu">
           <input id="menu_toggle" type="checkbox" />
@@ -70,23 +70,25 @@
           </div>
         </div>
       </section>
-
-      
-
       <section class="version">
         <div class="container">
-          <h2 class="title">Выберете свой вариант:</h2>
+          <h2 class="title">Выберите свой вариант помощи животным:</h2>
           <div class="cards">
             <div class="card card_column">
               <picture>
-                <img src="/asset/img/version/probirka_1.jpg" alt="" class="version__img-rose"/>
+                <img
+                  src="/asset/img/version/probirka_1.jpg"
+                  alt=""
+                  class="version__img-rose"
+                />
               </picture>
 
               <span class="version__line"></span>
               <div class="version__title">Стать донором</div>
               <div class="version__describe">
-                Хотите сделать доброе дело и спасти жизнь? <br />
-                Узнайте больше о донорстве крови для животных!
+                Хотите сделать доброе дело и спасти жизнь? Узнайте больше о
+                донорстве крови для животных и узнайте, как ваш питомец может
+                стать героем!
               </div>
               <div class="version__wrapper-btn">
                 <a href="#" class="btn version__btn">Подробнее</a>
@@ -94,13 +96,18 @@
             </div>
             <div class="card card_column">
               <picture>
-                <img src="/asset/img/version/probirka_2.jpg" alt="пробирка" class="version__img-tube"/>
+                <img
+                  src="/asset/img/version/probirka_2.jpg"
+                  alt="пробирка"
+                  class="version__img-tube"
+                />
               </picture>
               <span class="version__line"></span>
               <div class="version__title">Нужна кровь</div>
               <div class="version__describe">
-                Нужна срочно кровь для вашего питомца? <br />
-                Узнайте как получить необходимую помощь!
+                Срочно требуется помощь для вашего питомца?<br />
+                Узнайте, как получить необходимую поддержку и найти донора для
+                вашего любимца.
               </div>
               <div class="version__wrapper-btn">
                 <a href="#" class="btn version__btn">Подробнее</a>
@@ -112,33 +119,23 @@
 
       <section class="fact">
         <div class="container">
-          <!-- <div class="cards version__offset"> -->
-
-            <div class="cards flex-end">
-              <div class="card">
-                <div class="fact__wrapper">
-                  <div class="fact__wrapper_text">
-                    Каждый шестой владелец больного питомца
-                    в России сталкивается с необходимостью донорской крови для спасения жизни своего любимца.
-                    Ваш вклад может стать решением этой проблемы.
-                  </div>
+          <div class="cards flex-end">
+            <div class="card">
+              <div class="fact__wrapper">
+                <div class="fact__wrapper_text">
+                  Каждый шестой владелец больного питомца в России сталкивается
+                  с необходимостью донорской крови для спасения жизни своего
+                  любимца. Ваш вклад может стать решением этой проблемы.
                 </div>
               </div>
-              <div class="card">
-                <img src="/asset/img/fact/bunny.png" alt="зайка" />
-              </div>
             </div>
+            <div class="card">
+              <img src="/asset/img/fact/bunny.png" alt="зайка" />
+            </div>
+          </div>
         </div>
       </section>
 
-
-      
-
-
-
-
-      
-<!--
       <section class="important">
         <div class="container">
           <h2 class="title">
@@ -181,7 +178,7 @@
           <div class="cards">
             <div class="donors__box">
               <picture>
-                <img src="/asset/img/donors/dog.svg" alt="донор_собака" />
+                <img src="/asset/img/donors/dog.png" alt="донор собака" />
               </picture>
               <div class="donors__wrapper-btn">
                 <a href="#" class="btn donors__btn">Собака</a>
@@ -189,7 +186,7 @@
             </div>
             <div class="donors__box">
               <picture>
-                <img src="/asset/img/donors/cat.svg" alt="донор_кошка" />
+                <img src="/asset/img/donors/cat.png" alt="донор кошка" />
               </picture>
               <div class="donors__wrapper-btn">
                 <a href="#" class="btn donors__btn">Кошка</a>
@@ -197,129 +194,158 @@
             </div>
             <div class="donors__box">
               <picture>
-                <img src="/asset/img/donors/rabbit.svg" alt="донор_кролик" />
+                <img src="/asset/img/donors/rodent.png" alt="донор грызуны" />
               </picture>
               <div class="donors__wrapper-btn">
-                <a href="#" class="btn donors__btn">Кролик</a>
+                <a href="#" class="btn donors__btn">Грызуны</a>
               </div>
             </div>
             <div class="donors__box">
               <picture>
-                <img src="/asset/img/donors/parrot.svg" alt="донор_попугай" />
+                <img src="/asset/img/donors/birds.png" alt="донор птицы" />
               </picture>
               <div class="donors__wrapper-btn">
-                <a href="#" class="btn donors__btn">Попугай</a>
+                <a href="#" class="btn donors__btn">Птицы</a>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="usful_info">
+
+      <section class="usful-info">
         <div class="container">
           <h2 class="title">Полезная информация</h2>
           <div class="cards">
             <div class="card card_column">
-              <ul class="usful_info__menu" id="usful_info__menu">
-                <li data-id="0" class="active">
-                  <a class="usful_info__item">Почему важно сдавать кровь?</a>
-                </li>
-                <li data-id="1">
-                  <a class="usful_info__item"
-                    >Сколько по времени занимает донация?</a
-                  >
-                </li>
-                <li data-id="2">
-                  <a class="usful_info__item"
-                    >Нужно держать питомца во время донации?</a
-                  >
-                </li>
-                <li data-id="3">
-                  <a class="usful_info__item">Безопасно ли это?</a>
-                </li>
-                <li data-id="4">
-                  <a class="usful_info__item">Кровь берётся под наркозом?</a>
-                </li>
-                <li data-id="5">
-                  <a class="usful_info__item"
-                    >Как часто сдаётся донорская кровь?</a
-                  >
-                </li>
-                <li data-id="6">
-                  <a class="usful_info__item">Как вы находите доноров?</a>
-                </li>
-                <li data-id="7">
-                  <a class="usful_info__item"
-                    >Требуется ли подготовка питомца к донации?</a
-                  >
-                </li>
-                <li data-id="8">
-                  <a class="usful_info__item"
-                    >За какое время у питомца восполняется кровь?</a
-                  >
-                </li>
-              </ul>
-            </div>
-            <div class="usful_info__text">
-              <div class="usful_info__text__title">
-                Почему важно сдавать кровь?
+
+              <div class="accordion">
+                <div class="accordion-item">
+                  <div class="accordion-header">Почему важно сдавать кровь?</div>
+                  <div class="accordion-content">
+                      1У собак донация занимает примерно 30-40 минут, а у кошек 15-20 минут. Кровь у животных берется без наркоза, т.к. это абсолютно безболезненная процедура.
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <div class="accordion-header">Сколько по времени занимает донация?</div>
+                  <div class="accordion-content">
+                    2У собак донация занимает примерно 30-40 минут, а у кошек 15-20 минут. Кровь у животных берется без наркоза, т.к. это абсолютно безболезненная процедура.
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <div class="accordion-header">Нужно держать питомца во время донации?</div>
+                  <div class="accordion-content">
+                    3У собак донация занимает примерно 30-40 минут, а у кошек 15-20 минут. Кровь у животных берется без наркоза, т.к. это абсолютно безболезненная процедура.
+                  </div>
+                </div>
+
+
+                <div class="accordion-item">
+                  <div class="accordion-header">Безопасно ли это?</div>
+                  <div class="accordion-content">
+                    4У собак донация занимает примерно 30-40 минут, а у кошек 15-20 минут. Кровь у животных берется без наркоза, т.к. это абсолютно безболезненная процедура.
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <div class="accordion-header">Кровь берётся под наркозом?</div>
+                  <div class="accordion-content">
+                    5У собак донация занимает примерно 30-40 минут, а у кошек 15-20 минут. Кровь у животных берется без наркоза, т.к. это абсолютно безболезненная процедура.
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <div class="accordion-header">Как часто сдаётся донорская кровь?</div>
+                  <div class="accordion-content">
+                    6У собак донация занимает примерно 30-40 минут, а у кошек 15-20 минут. Кровь у животных берется без наркоза, т.к. это абсолютно безболезненная процедура.
+                  </div>
+                </div>
+
+              <div class="accordion-item">
+                <div class="accordion-header">Как вы находите доноров?</div>
+                <div class="accordion-content">
+                  7У собак донация занимает примерно 30-40 минут, а у кошек 15-20 минут. Кровь у животных берется без наркоза, т.к. это абсолютно безболезненная процедура.
+                </div>
               </div>
-              <div class="usful_info__text__describe">текст 1</div>
+
+              <div class="accordion-item">
+                <div class="accordion-header">Требуется ли подготовка питомца к донации?</div>
+                <div class="accordion-content">
+                  8У собак донация занимает примерно 30-40 минут, а у кошек 15-20 минут. Кровь у животных берется без наркоза, т.к. это абсолютно безболезненная процедура.
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <div class="accordion-header">За какое время у питомца восполняется кровь?</div>
+                <div class="accordion-content">
+                  9У собак донация занимает примерно 30-40 минут, а у кошек 15-20 минут. Кровь у животных берется без наркоза, т.к. это абсолютно безболезненная процедура.
+                </div>
+              </div>
             </div>
-            <div class="usful_info__cat">
-              <img src="/asset/img/usful_info/cat.png" />
+            </div>
+            <div class="card usful-info__text">
+              <div class="wrapper">
+                <div class="data">
+                  <div class="data__title">
+                    Почему важно сдавать кровь?
+                  </div>
+                  <div class="data__text">
+                    У собак донация занимает примерно 30-40 минут, а у кошек 15-20 минут. Кровь у животных берется без наркоза, т.к. это абсолютно безболезненная процедура.
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <div class="card usful-info__person">
+              <picture>
+                <img src="/asset/img/usful_info/person.png"  alt=""/>
+              </picture>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="about_us">
+      
+      <section class="about-us">
         <div class="container">
-          <div class="card about_us__offset">
+          <div class="cards">
             <div class="cards card_column">
               <h2 class="title">О нас</h2>
-              <div class="about_us__describe">
-                Сайт
-                <font face="Imperial Script" size="6">«Bloodline»</font>
-                позволяет владельцам питомцев размещать обращения о
-                необходимости донорской крови, быстро распространяя их по
-                соцсетям и объединяя людей для спасения животных в критических
-                ситуациях.
+              <div class="about-us__describe"> Сайт <span class="font-highlighted">«Bloodline»</span> объединяет владельцев питомцев, которым требуется донорская кровь, и тех, кто готов помочь. Мы помогаем размещать обращения о необходимости донорской крови, быстро распространяя их по социальным сетям и объединяя людей для спасения животных в критических ситуациях.
               </div>
               <img src="/asset/img/about_us/logo.svg" />
             </div>
-            <div class="about_us__box">
+            <div class="about-us__form">
+
               <h2 class="title">Получите бесплатную консультацию</h2>
-              <div class="about_us__tel">
+              <div class="about-us__form-describe">
+                Если у вас есть вопросы о донорстве или необходимости крови для вашего питомца, заполните форму ниже, и наши специалисты свяжутся с вами.
+              </div>
+              <div class="about-us__tel">
                 <input
                   type="tel"
-                  class="about_us__tel__phone"
+                  class="about-us__tel__phone"
                   placeholder="Телефон"
                   maxlength="18"
                   pattern="\d*"
                 />
               </div>
-              <div class="about_us__check-policy">
-                <input type="checkbox" class="about_us__checkbox" />
-                <label class="about_us__describe"
-                  >Согласен на обработку персональных <br />
-                  данных</label
-                >
+              <div class="about-us__check-policy">
+                <input type="checkbox" class="about-us__checkbox" />
+                <label class="about-us__describe">Я согласен(на) на обработку моих персональных данных в соответствии с <a href="#" class="link-red">Политикой конфиденциальности</a>.</label>
               </div>
-              <div class="about_us__wrapper-btn">
-                <a href="#" class="btn about_us__btn disabled"
-                  >Получить консультацию</a
-                >
+              <div class="about-us__wrapper-btn">
+                <a href="#" class="btn about-us__btn disabled">Записаться на консультацию</a>
               </div>
             </div>
           </div>
         </div>
       </section>
-
-      -->
     </main>
 
-    <!--
+
     <footer class="footer">
       <div class="container">
         <div class="footer__wrapper">
@@ -367,14 +393,14 @@
             </div>
           </div>
 
-          <div class="logo">
+          <a href="./" class="logo">
             <div class="logo__img">
               <picture>
-                <img src="/asset/img/logo.svg" alt="логотип" />
+                <img src="./asset/img/logo.svg" alt="логотип" />
               </picture>
             </div>
             <div class="logo__site-name">Bloodline</div>
-          </div>
+          </a>
         </div>
         <div class="footer__info">
           <div>При поддержке гранта «Умный Сон»</div>
@@ -382,7 +408,8 @@
         </div>
       </div>
     </footer>
-    -->
+
+
     <script src="/asset/js/script.js"></script>
   </body>
 </html>

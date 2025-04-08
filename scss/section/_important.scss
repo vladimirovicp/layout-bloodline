@@ -5,6 +5,8 @@
 
   .cards{
     margin-top: 50px;
+    flex-direction: column;
+    gap: 30px;
   }
 
   img {
@@ -21,16 +23,42 @@
   }
 
   &__title {
-    color: #a80021;
-    font-size: 24px;
-    line-height: 30px;
+    color: #7D0100;
     font-weight: 1000;
+    font-size: 16px;
+    line-height: normal;
   }
 
   &__describe {
     text-align: center;
-    font-size: 18px;
-    line-height: 23px;
-    letter-spacing: 1.08px;
+    font-size: 16px;
+    line-height: normal;
+  }
+}
+
+
+@media (min-width: 768px) {
+  .important{
+    .cards{
+      flex-direction: row;
+    }
+
+        &__title{
+      font-size: 24px;
+      line-height: 150%;
+      letter-spacing: 0.72px;
+    }
+
+    &__describe{
+      font-size: 18px;
+      line-height: 23px;
+      letter-spacing: 1.08px;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .important{
+
   }
 }
