@@ -57,10 +57,10 @@
   position: fixed;
   top: 0;
   right: -100%;
-  width: 100%;
+  width: 320px;
   height: 100%;
   margin: 0;
-  padding: 80px 0;
+  padding: 80px 20px;
   list-style: none;
   background-color: #18171C;
   transition-duration: .25s;
@@ -69,15 +69,68 @@
 .menu_item {
   display: block;
   cursor: pointer;
-  text-align: center;
-  padding-top: 28px;
+  padding-top: 18px;
   color: $white;
-  font-size: 24px;
   font-weight: 700;
   text-decoration: none;
   transition-duration: .25s;
+  text-decoration: none;
 }
 
-.menu_item:hover{
-  text-decoration: underline;
+.menu{
+  &__title{
+    display: block;
+    padding-top: 18px;
+    font-weight: 700;
+  }
+  &_box{
+    ul{
+      list-style: none;
+      .menu_item{
+        padding-top: 10px;
+      }
+    }
+  }
+}
+
+// .menu_item:hover{
+//   text-decoration: underline;
+// }
+
+@media (min-width: 768px) {
+  .menu{
+    &_box{
+      width: 386px;
+      padding: 80px 30px;
+      ul{
+        .menu_item{
+          padding-top: 15px;
+        }
+      }
+    }
+    &_item{
+      padding-top: 20px;
+    }
+
+    &__title{
+      padding-top: 20px;
+      font-weight: 700;
+    }
+  }
+}
+
+@media (hover: hover) {
+  .menu{
+    &_box{
+      
+    }
+
+    &_item{
+      transition: color 0.5s ease-in-out;
+      &:hover{
+        color: $primaryHover;
+      }
+      
+    }
+  }
 }
