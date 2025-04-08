@@ -77,9 +77,6 @@ if(usful_info){
 }
 
 
-
-
-
 const menuToggle = document.querySelector('#menu_toggle')
 const body = document.querySelector('body');
 
@@ -90,16 +87,16 @@ menuToggle.addEventListener('click', ()=>{
 
 
 
-const section_about_us = document.querySelector('.about_us');
+const section_about_us = document.querySelector('.about-us');
 
 if(section_about_us){
 
     section_about_us.addEventListener('click', () => {
 
 
-        const checkbox = section_about_us.querySelector('.about_us__checkbox');
-        const aboutUsBtn = section_about_us.querySelector('.about_us__btn');
-        const phoneInput = section_about_us.querySelector('.about_us__tel__phone');
+        const checkbox = section_about_us.querySelector('.about-us__checkbox');
+        const aboutUsBtn = section_about_us.querySelector('.about-us__btn');
+        const phoneInput = section_about_us.querySelector('.about-us__tel__phone');
 
 
     // ---------------------------------------------------------------------------------------------------
