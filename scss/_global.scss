@@ -110,6 +110,7 @@ body {
   font-weight: 1000;
   line-height: normal;
   letter-spacing: 1.08px;
+  padding-bottom: 18px;
 }
 
 .flex-end{
@@ -154,6 +155,32 @@ body {
   font-family: "Imperial Script", cursive;
   font-size: 24px;
   letter-spacing: 0.72px;
+}
+
+.row{
+  display: flex;
+  justify-content: space-between;
+}
+
+.col{
+
+}
+
+p{
+  margin: 0;
+}
+
+.indent{
+  &-basic{
+    margin-bottom: 18px;
+  }
+}
+
+.ul{
+  &-basic{
+    margin: 0;
+    padding-bottom: 30px;
+  }
 }
 
 
