@@ -160,6 +160,7 @@ body {
 .row{
   display: flex;
   justify-content: space-between;
+  flex-direction: column;
 }
 
 .col{
@@ -243,6 +244,12 @@ p{
     flex-direction: column;
     align-items: center;
     gap: 20px;
+  }
+
+  .row{
+    // display: flex;
+    // justify-content: space-between;
+    flex-direction: row;
   }
 
 
