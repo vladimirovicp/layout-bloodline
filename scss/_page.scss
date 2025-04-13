@@ -1,0 +1,62 @@
+.page{
+
+    &-donar{
+        .cards{
+            flex-wrap: wrap;
+        }
+        .card{
+            text-align: left;
+            flex-shrink: 0;
+            width: 48%;
+
+            &_column{
+                align-items: start;
+            }
+
+            &:first-child{
+
+            }
+
+            &:nth-child(2){
+                padding-top: 120px;
+            }
+        }
+
+        .wrapper-btn{
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+    }
+}
+
+.question-answer{
+    .question{
+        color: $highlightingText;
+        line-height: normal;
+        letter-spacing: 1.08px;
+        display: flex;
+        padding-bottom: 18px;
+
+        .label{
+            min-width: 106px;
+        }
+        .text{
+
+        }
+    }
+
+    .answer{
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 1.08px;
+        display: flex;
+        padding-bottom: 18px;
+        .label{
+            min-width: 106px;
+        }
+        .text{
+
+        }
+    }
+}

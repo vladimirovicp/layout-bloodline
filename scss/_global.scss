@@ -41,11 +41,8 @@ body {
 
 .main {
   min-height: calc(100vh - 513px);
-
-  section {
-    .container {
-      background-color: $white;
-    }
+  .container {
+    background-color: $white;
   }
 }
 
@@ -106,6 +103,13 @@ body {
 
 .title-red {
   color: $primary;
+}
+
+.highlighting-text{
+  color: $highlightingText;
+  font-weight: 1000;
+  line-height: normal;
+  letter-spacing: 1.08px;
 }
 
 .flex-end{
