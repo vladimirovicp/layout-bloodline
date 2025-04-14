@@ -153,7 +153,8 @@ if(section_about_us){
 document.addEventListener('DOMContentLoaded', function() {
     const accordionHeaders = document.querySelectorAll('.accordion-header');
 
-    if (accordionHeaders){
+    if (accordionHeaders.length > 0){
+
         accordionHeaders.forEach(header => {
             header.addEventListener('click', function() {
                 // Закрываем все открытые разделы, кроме текущего

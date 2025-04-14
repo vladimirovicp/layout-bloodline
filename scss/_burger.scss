@@ -119,6 +119,12 @@
   }
 }
 
+@media (max-width: 320px) {
+  .menu_box {
+    right: -200%;
+  } 
+}
+
 @media (hover: hover) {
   .menu{
     &_box{
