@@ -30,6 +30,12 @@
             line-height: 150%;
         }
     }
+
+    &-form{
+        .top{
+            padding-bottom: 70px;
+        }
+    }
 }
 
 .question-answer{
@@ -63,6 +69,22 @@
     }
 }
 
+.field__form{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 18px;
+
+    input{
+        border-radius: 5px;
+        border: 1px solid #7D0100;
+        width: 420px;
+        height: 50px;
+    }
+}
+
+
+
 
 @media (min-width: 768px) {
     .page{
@@ -84,6 +106,24 @@
 
             .guide, .criteria{
                 padding-bottom: 70px;
+            }
+        }
+
+        &-form{
+            .row{
+                gap: 40px;
+            }
+            .col{
+                &:first-child{
+                    flex-shrink: 0;
+                    width: 850px;
+                }
+
+                .title{
+                    text-align: left;
+                    padding-bottom: 18px;
+                }
+
             }
         }
 

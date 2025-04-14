@@ -24,6 +24,10 @@ body {
   background-color: $dark;
 }
 
+h2{
+  margin: 0;
+}
+
 .burger_click{
   overflow: hidden;
 }
@@ -74,6 +78,7 @@ body {
   line-height: 25px;
   text-decoration: none;
   text-align: center;
+  cursor: pointer;
 }
 
 .btn.disabled{

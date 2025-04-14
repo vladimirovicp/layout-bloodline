@@ -1,12 +1,198 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Станьте донором крови и спасите жизнь животного!</h1>
-    
-</body>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bloodline</title>
+    <link rel="icon" type="image/x-icon" href="../asset/favicon.ico">
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Imperial+Script&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../fonts/impact/stylesheet.css" />
+  </head>
+  <body class="page-form">
+    <header class="header">
+      <div class="container">
+        <a href="/" class="logo">
+          <div class="logo__img">
+            <picture>
+              <img src="../asset/img/logo.svg" alt="логотип" />
+            </picture>
+          </div>
+          <div class="logo__site-name">Bloodline</div>
+        </a>
+
+        <div class="hamburger-menu">
+          <input id="menu_toggle" type="checkbox" />
+          <label class="menu_btn" for="menu_toggle">
+            <span></span>
+          </label>
+          <ul class="menu_box">
+            <li><a class="menu_item" href="/">Главная</a></li>
+            
+            <li>
+              <a class="menu_item" href="./info-donor">Информация о донорстве</a>
+            </li>
+            <li>
+               <span class="menu__title">Кто может стать донором?</span>
+
+              <ul>
+                <li>
+                  <a href="./donar-dog" class="menu_item">Собаки</a>
+                </li>
+                <li>
+                  <a href="./donar-cat" class="menu_item">Кошки</a>
+                </li>
+                <li>
+                  <a href="./donar-rodents" class="menu_item">Грызуны</a>
+                </li>
+                <li>
+                  <a href="./donar-birds" class="menu_item">Птицы</a>
+                </li>
+              </ul>
+            </li>
+            <li><a class="menu_item" href="./get-where-blood">Где сдать/получить кровь</a></li>
+            <li><a class="menu_item" href="./how-blood">Как мы ищем кровь?</a></li>
+            <li><a class="menu_item" href="./about">О нас / Контакты</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <div class="container">
+        <div class="top">
+            <h1 class="title">Станьте донором крови и спасите жизнь животного!</h1>
+            <div class="highlighting-text">Форма для регистрации в качестве донора крови</div>
+            <p>Если вы хотите помочь спасти жизнь животному, заполните форму ниже. Мы свяжемся с вами, чтобы уточнить детали и пригласить на обследование. Ваш питомец может стать настоящим героем для других!</p>
+        </div>
+
+
+        <div class="row">
+          <div class="col">
+            
+            <form action="#" class="form">
+                <div class="highlighting-text">Информация о владельце</div>
+
+                <div class="field__form">
+                    <label for="name">ФИО:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="field__form">
+                    <label for="phone">Телефон:</label>
+                    <input type="text" id="phone" name="phone" required>
+                </div>
+                <div class="field__form">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="field__form">
+                    <label for="city">Местонахождение (город/регион):</label>
+                    <input type="text" id="city" name="city" required>
+                </div>
+
+                
+                <div class="highlighting-text">Информация о животном</div>
+                <button type="submit" class="btn">Отправить</button>
+
+            </form>
+            
+          </div>
+          <div class="col">
+            <h2 class="title">Как это работает?</h2>
+            <div class="highlighting-text">Заполните форму</div>
+            <div class="indent-basic">Укажите все необходимые данные о себе и своем питомце.</div>
+
+            <div class="highlighting-text">Мы свяжемся с вами</div>
+            <div class="indent-basic">Наши специалисты организуют бесплатное обследование вашего питомца, чтобы убедиться, что он подходит для донорства.</div>
+
+            <div class="highlighting-text">Станьте донором</div>
+            <div class="indent-basic">Если ваш питомец соответствует требованиям, мы пригласим вас на процедуру донорства.</div>
+
+            <div class="highlighting-text">Почему важно стать донором?</div>
+            <div class="indent-basic">Каждая капля крови — это шанс спасти жизнь другого животного. Донорство абсолютно безопасно для вашего питомца, но его влияние может быть огромным. Присоединяйтесь к нашей программе и станьте частью большой истории помощи и заботы!</div>
+
+            <div class="highlighting-text">Есть вопросы?</div>
+            <div class="indent-basic">Если вам нужна дополнительная информация или помощь, свяжитесь с нами по телефону: <a href="tel:86334535633">8(633)453-56-33</a> или напишите на почту: <a href="mailto:vetclikpet@mail.ru">vetclikpet@mail.ru</a>.</div>
+          </div>
+        </div>
+      </div>
+      
+      
+
+
+    </main>
+
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__wrapper">
+          <div class="footer__data">
+            <div class="footer__contacts">
+              <div class="footer__contacts-title">Контактные данные:</div>
+              <div class="footer__contacts-item">
+                <div class="footer__contacts-img">
+                  <picture>
+                    <img src="../asset/img/footer/phone.svg" alt="Phone" />
+                  </picture>
+                </div>
+                <div class="footer__contacts-data">
+                  <a href="tel:86334535633"> 8(633)453-56-33 </a>
+                </div>
+              </div>
+
+              <div class="footer__contacts-item">
+                <div class="footer__contacts-img">
+                  <picture>
+                    <img src="../asset/img/footer/email.svg" alt="Mail" />
+                  </picture>
+                </div>
+                <div class="footer__contacts-data">
+                  <a href="mailto:vetclikpet@mail.ru"> vetclikpet@mail.ru </a>
+                </div>
+              </div>
+            </div>
+            <div class="footer__social">
+              <a href="#" target="_blank" class="social-icon">
+                <picture>
+                  <img src="../asset/img/footer/telegram.svg" alt="Telegram" />
+                </picture>
+              </a>
+              <a href="#" target="_blank" class="social-icon">
+                <picture>
+                  <img src="../asset/img/footer/VK.svg" alt="VK" />
+                </picture>
+              </a>
+              <a href="#" target="_blank" class="social-icon">
+                <picture>
+                  <img src="../asset/img/footer/instagram.svg" alt="Instagram" />
+                </picture>
+              </a>
+            </div>
+          </div>
+
+          <a href="./" class="logo">
+            <div class="logo__img">
+              <picture>
+                <img src="../asset/img/logo.svg" alt="логотип" />
+              </picture>
+            </div>
+            <div class="logo__site-name">Bloodline</div>
+          </a>
+        </div>
+        <div class="footer__info">
+          <div>При поддержке гранта «Умный Сон»</div>
+          <div>©2024 - 2025 г.</div>
+        </div>
+      </div>
+    </footer>
+
+
+    <script src="../asset/js/script.js"></script>
+  </body>
 </html>
