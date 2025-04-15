@@ -24,6 +24,10 @@ body {
   background-color: $dark;
 }
 
+h2{
+  margin: 0;
+}
+
 .burger_click{
   overflow: hidden;
 }
@@ -74,6 +78,7 @@ body {
   line-height: 25px;
   text-decoration: none;
   text-align: center;
+  cursor: pointer;
 }
 
 .btn.disabled{
@@ -179,6 +184,9 @@ p{
   &-basic{
     margin-bottom: 18px;
   }
+  &-big{
+    margin-bottom: 40px;
+  }
 }
 
 .ul{
@@ -254,6 +262,15 @@ p{
     // display: flex;
     // justify-content: space-between;
     flex-direction: row;
+  }
+
+  .indent{
+    &-basic{
+      margin-bottom: 18px;
+    }
+    &-big{
+      margin-bottom: 70px;
+    }
   }
 
 
