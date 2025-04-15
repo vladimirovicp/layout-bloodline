@@ -80,6 +80,7 @@
         border: 1px solid #7D0100;
         width: 420px;
         height: 50px;
+        flex-shrink: 0;
     }
 }
 
@@ -124,6 +125,18 @@
                     padding-bottom: 18px;
                 }
 
+            }
+
+            .field__form{
+                input{
+                    padding: 9px;
+                }
+            }
+
+            .message{
+                width: 100%;
+                height: 100px;
+                padding: 9px;
             }
         }
 
