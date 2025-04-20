@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bloodline</title>
+    <link rel="icon" type="image/x-icon" href="../asset/favicon.ico">
     <link rel="stylesheet" href="../css/style.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -14,15 +15,17 @@
     />
     <link rel="stylesheet" href="../fonts/impact/stylesheet.css" />
   </head>
-  <body>
+  <body class="page-donar">
     <header class="header">
       <div class="container">
-        <div class="logo">
+        <a href="/" class="logo">
           <div class="logo__img">
-            <img src="../asset/img/logo.svg" alt="логотип" />
+            <picture>
+              <img src="../asset/img/logo.svg" alt="логотип" />
+            </picture>
           </div>
           <div class="logo__site-name">Bloodline</div>
-        </div>
+        </a>
 
         <div class="hamburger-menu">
           <input id="menu_toggle" type="checkbox" />
@@ -31,89 +34,125 @@
           </label>
           <ul class="menu_box">
             <li><a class="menu_item" href="/">Главная</a></li>
-            <li><a class="menu_item" href="#">О нас</a></li>
+            
             <li>
               <a class="menu_item" href="/info-donor">Информация о донорстве</a>
             </li>
-            <li><a class="menu_item" href="#">Кто может стать донором?</a></li>
-            <li><a class="menu_item" href="#">Где сдать кровь?</a></li>
-            <li><a class="menu_item" href="#">Где достать кровь?</a></li>
-            <li><a class="menu_item" href="#">Как мы ищем кровь?</a></li>
-            <li><a class="menu_item" href="#">Часто задаваемые вопросы</a></li>
             <li>
-              <a class="menu_item" href="#">Социальные сети и контакты</a>
+               <span class="menu__title">Кто может стать донором?</span>
+
+              <ul>
+                <li>
+                  <a href="/donar-dog" class="menu_item">Собаки</a>
+                </li>
+                <li>
+                  <a href="/donar-cat" class="menu_item">Кошки</a>
+                </li>
+                <li>
+                  <a href="/donar-rodents" class="menu_item">Грызуны</a>
+                </li>
+                <li>
+                  <a href="/donar-birds" class="menu_item">Птицы</a>
+                </li>
+              </ul>
             </li>
+            <li><a class="menu_item" href="/get-where-blood">Где сдать/получить кровь</a></li>
+            <li><a class="menu_item" href="/how-blood">Как мы ищем кровь?</a></li>
+            <li><a class="menu_item" href="/about">О нас / Контакты</a></li>
           </ul>
         </div>
       </div>
     </header>
     <main class="main">
-      <section class="donation-info">
-        <div class="container">
-          <h2 class="title">Информация о донорстве</h2>
-          <div class="centered">
-            <div class="donation-info__describe">
-              Донорство животных — это благородный акт, который может спасти
-              жизнь другому питомцу. Каждый здоровый четвероногий друг может
-              стать героем, предоставив свою кровь в критический момент. Ваша
-              поддержка помогает ветеринарам проводить необходимые процедуры и
-              спасать жизни. Присоединившись к программе донорства, вы не только
-              помогаете другим, но и укрепляете связь со своим питомцем. Давайте
-              вместе сделаем мир лучше для наших братьев меньших!
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h1 class="title">Всё, что нужно знать о донорстве крови для животных</h1>
+            <p class="indent-big">Донорство крови для животных — это важный и благородный шаг, который может спасти жизнь. Здесь вы найдете всю необходимую информацию о том, как это работает, кто может стать донором и почему это так важно.</p>
+            <div class="highlighting-text">Почему донорство крови важно?</div>
+            <p class="indent-basic">Каждый день сотни животных сталкиваются с ситуациями, когда их жизнь зависит от переливания крови. Травмы, операции, тяжелые заболевания — все это требует срочной помощи. Но запасы донорской крови ограничены, и без поддержки заботливых владельцев многие питомцы не смогут получить необходимое лечение.</p>
+            <p class="indent-big">Ваш питомец может стать донором и подарить надежду тем, кто в ней так нуждается.</p>
+
+
+            <div class="criteria">
+              <div class="highlighting-text">Кто может стать донором?</div>
+              <p class="indent-basic">Не каждый питомец может стать донором. Вот основные требования:</p>
+              <div>
+                <b>Возраст</b>:от 1 до 7–8 лет (в зависимости от вида животного).<br>
+                <b>Вес</b>: минимальный вес зависит от вида:<br>
+                &emsp;&emsp; Собаки: от 10 кг.<br>
+                &emsp;&emsp; Кошки: от 4 кг.<br>
+                &emsp;&emsp; Грызуны: от 2 кг.<br>
+                &emsp;&emsp; Птицы: в пределах нормы для вида.<br>
+                <b>Здоровье:</b>: питомец должен быть здоров, активен и регулярно проходить ветеринарные осмотры.<br>
+                <b>Прививки</b>: наличие актуальных прививок и отсутствие паразитов.<br>
+                <b>Темперамент</b>: спокойный характер, чтобы процедура прошла комфортно.
+              </div>
+              <p>Перед процедурой проводится полное обследование, чтобы убедиться, что ваш питомец готов стать донором.</p>
+            </div>
+
+            
+
+            <div class="criteria">
+              <div class="highlighting-text">Как проходит процедура донорства?</div>
+              <p>Процесс донорства абсолютно безопасен и комфортен для вашего питомца:</p>
+              <b>Подготовка</b>: перед процедурой проводится полное обследование, чтобы убедиться, что питомец здоров.<br>
+              <b>Процедура</b>: кровь берется из вены (обычно на лапе или шее). Процесс занимает 15–40 минут (в зависимости от вида животного) и полностью безболезненный.<br>
+              <b>Восстановление</b>: после процедуры питомец получает воду и легкий перекус. Мы рекомендуем провести немного времени в покое.<br>
+            </div>
+
+            <div class="criteria">
+              <div class="highlighting-text">Преимущества участия в программе донорства</div>
+              <p>Участие в программе донорства — это не только помощь другим животным, но и ряд бонусов для вас и вашего питомца:</p>
+              <b>Бесплатные обследования</b>: перед каждой процедурой ваш питомец проходит полное медицинское обследование, включая анализы крови.<br>
+              <b>Скидки на услуги</b>: участники программы получают скидки на ветеринарные услуги или премиальный корм.<br>
+              <b>Мониторинг здоровья</b>: регулярные проверки помогают своевременно выявить возможные проблемы со здоровьем вашего питомца<br>
+              <b>Чувство гордости</b>: ваш питомец становится героем, который спасает жизни других животных.<br>
+              <b>Поддержка сообщества:</b>: вы присоединяетесь к сообществу заботливых владельцев, которые вместе делают мир лучше для питомцев.<br>
+            </div>
+
+            <div class="criteria">
+              <div class="highlighting-text">Как часто можно сдавать кровь?</div>
+              <b>Для собак</b>: интервал между процедурами — минимум 3 месяца.<br>
+              <b>Для кошек</b>: интервал между процедурами — минимум 2 месяца.<br>
+              <b>Для грызунов и птиц</b>: интервал зависит от вида и состояния животного.<br>
+
             </div>
           </div>
-          <div class="cards">
-            <div class="card">
-              <img src="../asset/img/donation-info/dog.jpg" />
+
+          <div class="col">
+            <div class="highlighting-text">Разбираем мифы о донорстве крови для животных</div>
+            <div class="indent-basic">
+              <div class="indent-basic"><b>Миф 1: Процедура болезненна для животного.</b></div>
+              <p class="indent-basic"><b>Правда</b>: Процедура полностью безболезненна. Кровь берется из вены, и животное находится в расслабленном состоянии.</p>
             </div>
-            <div class="card">
-              <img src="../asset/img/donation-info/cat.jpg" />
+            <div class="indent-basic">
+              <div class="indent-basic"><b>Миф 2: Донорство вредит здоровью питомца.</b></div>
+              <p class="indent-basic"><b>Правда</b> Кровь восстанавливается в течение 2–3 недель, и процедура никак не влияет на долгосрочное здоровье животного.</p>
             </div>
+            <div class="indent-basic">
+              <div class="indent-basic"><b>Миф 3: Любой питомец может стать донором.</b></div>
+              <p class="indent-basic"><b>Правда</b> Для донорства есть строгие критерии: возраст, вес, здоровье и другие факторы. Перед процедурой проводится полное обследование.</p>
+            </div>
+            <div class="indent-basic">
+              <div class="indent-basic"><b>Миф 4: Питомцу нужен наркоз.</b></div>
+              <p class="indent-basic"><b>Правда</b> Наркоз не требуется. Процедура безопасна и комфортна для животного.</p>
+            </div>
+
+
+            <div class="wrapper-btn">
+              <a href="/forms-become" class="btn">Стать донором</a>
+              <a href="/#about-us" class="btn">Записаться на консультацию</a>
+
+            </div>
+            
           </div>
+
         </div>
-      </section>
-      <section class="participation">
-        <div class="container">
-          <h2 class="title">
-            <span class="title-red">ЗА УЧАСТИЕ В ДОНОРСТВЕ </span>ВЛАДЕЛЕЦ И
-            ПИТОМЕЦ <br />
-            ПОЛУЧАЮТ БОНУСЫ:
-          </h2>
-          <div class="cards">
-            <div class="card">
-              Здоровье питомца: Регулярные медицинские осмотры перед донорством
-              помогают выявить и предотвратить возможные проблемы со здоровьем.
-            </div>
-            <div class="card">
-              Бесплатные анализы: Владельцы получают возможность пройти
-              бесплатные анализы и обследования для своего питомца, что
-              позволяет следить за его состоянием.
-            </div>
-            <div class="card">
-              Финансовые преимущества: Владельцы могут получить скидки на
-              ветеринарные услуги и препараты, что делает уход за питомцем более
-              доступным.
-            </div>
-            <div class="card">
-              Эмоциональное удовлетворение: Участие в донорстве приносит
-              моральное удовлетворение от помощи другим животным, что укрепляет
-              связь между владельцем и питомцем.
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="tobe">
-        <div class="container">
-          <h2 class="title"><span class="title-red">Стать</span> донором:</h2>
-          <div class="cards">
-            <div class="card">ПОЛУЧИТЕ БЕСПЛАТНУЮ КОНСУЛЬТАЦИЮ:</div>
-            <div class="card">
-              <a href="#" class="btn tobe__btn">Стать донором</a>
-            </div>
-          </div>
-        </div>
-      </section>
+      </div>
     </main>
+
+
     <footer class="footer">
       <div class="container">
         <div class="footer__wrapper">
@@ -122,7 +161,9 @@
               <div class="footer__contacts-title">Контактные данные:</div>
               <div class="footer__contacts-item">
                 <div class="footer__contacts-img">
-                  <img src="../asset/img/footer/phone.svg" alt="Phone" />
+                  <picture>
+                    <img src="../asset/img/footer/phone.svg" alt="Phone" />
+                  </picture>
                 </div>
                 <div class="footer__contacts-data">
                   <a href="tel:86334535633"> 8(633)453-56-33 </a>
@@ -131,7 +172,9 @@
 
               <div class="footer__contacts-item">
                 <div class="footer__contacts-img">
-                  <img src="../asset/img/footer/email.svg" alt="Mail" />
+                  <picture>
+                    <img src="../asset/img/footer/email.svg" alt="Mail" />
+                  </picture>
                 </div>
                 <div class="footer__contacts-data">
                   <a href="mailto:vetclikpet@mail.ru"> vetclikpet@mail.ru </a>
@@ -140,29 +183,40 @@
             </div>
             <div class="footer__social">
               <a href="#" target="_blank" class="social-icon">
-                <img src="../asset/img/footer/telegram.svg" alt="Telegram" />
+                <picture>
+                  <img src="../asset/img/footer/telegram.svg" alt="Telegram" />
+                </picture>
               </a>
               <a href="#" target="_blank" class="social-icon">
-                <img src="../asset/img/footer/VK.svg" alt="VK" />
+                <picture>
+                  <img src="../asset/img/footer/VK.svg" alt="VK" />
+                </picture>
               </a>
               <a href="#" target="_blank" class="social-icon">
-                <img src="../asset/img/footer/instagram.svg" alt="Instagram" />
+                <picture>
+                  <img src="../asset/img/footer/instagram.svg" alt="Instagram" />
+                </picture>
               </a>
             </div>
           </div>
 
-          <div class="logo">
+          <a href="./" class="logo">
             <div class="logo__img">
-              <img src="../asset/img/logo.svg" alt="логотип" />
+              <picture>
+                <img src="../asset/img/logo.svg" alt="логотип" />
+              </picture>
             </div>
             <div class="logo__site-name">Bloodline</div>
-          </div>
+          </a>
         </div>
         <div class="footer__info">
           <div>При поддержке гранта «Умный Сон»</div>
-          <div>©2024г.</div>
+          <div>©2024 - 2025 г.</div>
         </div>
       </div>
     </footer>
+
+
+    <script src="../asset/js/script.js"></script>
   </body>
 </html>
