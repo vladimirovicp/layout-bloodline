@@ -1,11 +1,214 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Птицы</h1>
-</body>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bloodline</title>
+    <link rel="icon" type="image/x-icon" href="../asset/favicon.ico">
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Imperial+Script&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../fonts/impact/stylesheet.css" />
+  </head>
+  <body class="page-donar">
+    <header class="header">
+      <div class="container">
+        <a href="/" class="logo">
+          <div class="logo__img">
+            <picture>
+              <img src="../asset/img/logo.svg" alt="логотип" />
+            </picture>
+          </div>
+          <div class="logo__site-name">Bloodline</div>
+        </a>
+
+        <div class="hamburger-menu">
+          <input id="menu_toggle" type="checkbox" />
+          <label class="menu_btn" for="menu_toggle">
+            <span></span>
+          </label>
+          <ul class="menu_box">
+            <li><a class="menu_item" href="/">Главная</a></li>
+            
+            <li>
+              <a class="menu_item" href="/info-donor">Информация о донорстве</a>
+            </li>
+            <li>
+               <span class="menu__title">Кто может стать донором?</span>
+
+              <ul>
+                <li>
+                  <a href="/donar-dog" class="menu_item">Собаки</a>
+                </li>
+                <li>
+                  <a href="/donar-cat" class="menu_item">Кошки</a>
+                </li>
+                <li>
+                  <a href="/donar-rodents" class="menu_item">Грызуны</a>
+                </li>
+                <li>
+                  <a href="/donar-birds" class="menu_item">Птицы</a>
+                </li>
+              </ul>
+            </li>
+            <li><a class="menu_item" href="/get-where-blood">Где сдать/получить кровь</a></li>
+            <li><a class="menu_item" href="/how-blood">Как мы ищем кровь?</a></li>
+            <li><a class="menu_item" href="/about">О нас / Контакты</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h1 class="title">Птицы-доноры</h1>
+            <div class="guide">
+              <div class="highlighting-text">Какие птицы могут стать донорами? Полное руководство</div>
+              <p>Попугаи и другие птицы могут помочь своим собратьям в случае необходимости. Вот всё, что вам нужно знать о программе донорства для птиц.</p>
+            </div>
+            <div class="criteria">
+              <div class="highlighting-text">Критерии для птицы-донора</div>
+              <div>
+                <p>Чтобы птица могла стать донором, она должна соответствовать следующим требованиям:</p>
+                <b>Возраст</b>: от 1 до 5 лет (зависит от вида).<br>
+                <b>Вес</b>: зависит от породы, но должен быть в пределах нормы для возраста и вида.<br> 
+                <b>Общее здоровье</b>:  птица должна быть активной и здоровой, без хронических заболеваний, инфекций или паразитов. Исключаются сердечно-сосудистые проблемы, анемия, болезни почек и печени.<br>
+                <b>Вакцинация</b>: актуальные прививки (зависит от вида).<br>
+                <b>Защита от паразитов</b>: регулярная обработка от эктопаразитов и глистов.<br>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="highlighting-text">Как проходит процедура донорства?</div>
+            <p class="indent-basic">Процесс безопасен и занимает около 10–15 минут:</p>
+            <div class="indent-basic">
+              <b>Подготовка</b>: перед процедурой ветеринар проводит полное обследование, чтобы убедиться, что птица здорова.<br>
+              <b>Процедура</b>:  кровь берется из вены на крыле. Процесс безболезненный.<br>
+              <b>Восстановление</b>: после процедуры птица получает воду и возможность отдохнуть.<br>
+            </div>
+            <div class="highlighting-text">Преимущества участия в программе</div>
+            <ul class="ul-basic">
+              <li>Бесплатные обследования и анализы крови перед каждой процедурой.</li>
+              <li>Возможность помочь другим птицам в сложных ситуациях.</li>
+            </ul>
+
+            <div class="wrapper-btn">
+              <a href="/forms-become" class="btn">Стать донором</a>
+              <a href="/#about-us" class="btn">Записаться на консультацию</a>
+
+            </div>
+            
+          </div>
+          <div class="col">
+            <div class="highlighting-text">Частые вопросы и ответы</div>
+            <div class="question-answer">
+              <div class="question">
+                <div class="label">Вопрос:</div>
+                <div class="text">Больно ли птице сдавать кровь?</div>
+              </div>
+              <div class="answer">
+                <div class="label">Ответ:</div>
+                <div class="text">Нет, процедура безболезненна и безопасна.</div>
+              </div>
+
+              <div class="question">
+                <div class="label">Вопрос:</div>
+                <div class="text">Как часто можно сдавать кровь?</div>
+              </div>
+              <div class="answer">
+                <div class="label">Ответ:</div>
+                <div class="text">Интервал между процедурами — минимум 2 месяца.</div>
+              </div>
+
+              <div class="question">
+                <div class="label">Вопрос:</div>
+                <div class="text">Что делать, если я сомневаюсь, подходит ли мой питомец?</div>
+              </div>
+              <div class="answer">
+                <div class="label">Ответ:</div>
+                <div class="text">Запишитесь на бесплатную консультацию, и наши специалисты проведут полное обследование.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      
+
+
+    </main>
+
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__wrapper">
+          <div class="footer__data">
+            <div class="footer__contacts">
+              <div class="footer__contacts-title">Контактные данные:</div>
+              <div class="footer__contacts-item">
+                <div class="footer__contacts-img">
+                  <picture>
+                    <img src="../asset/img/footer/phone.svg" alt="Phone" />
+                  </picture>
+                </div>
+                <div class="footer__contacts-data">
+                  <a href="tel:86334535633"> 8(633)453-56-33 </a>
+                </div>
+              </div>
+
+              <div class="footer__contacts-item">
+                <div class="footer__contacts-img">
+                  <picture>
+                    <img src="../asset/img/footer/email.svg" alt="Mail" />
+                  </picture>
+                </div>
+                <div class="footer__contacts-data">
+                  <a href="mailto:vetclikpet@mail.ru"> vetclikpet@mail.ru </a>
+                </div>
+              </div>
+            </div>
+            <div class="footer__social">
+              <a href="#" target="_blank" class="social-icon">
+                <picture>
+                  <img src="../asset/img/footer/telegram.svg" alt="Telegram" />
+                </picture>
+              </a>
+              <a href="#" target="_blank" class="social-icon">
+                <picture>
+                  <img src="../asset/img/footer/VK.svg" alt="VK" />
+                </picture>
+              </a>
+              <a href="#" target="_blank" class="social-icon">
+                <picture>
+                  <img src="../asset/img/footer/instagram.svg" alt="Instagram" />
+                </picture>
+              </a>
+            </div>
+          </div>
+
+          <a href="./" class="logo">
+            <div class="logo__img">
+              <picture>
+                <img src="../asset/img/logo.svg" alt="логотип" />
+              </picture>
+            </div>
+            <div class="logo__site-name">Bloodline</div>
+          </a>
+        </div>
+        <div class="footer__info">
+          <div>При поддержке гранта «Умный Сон»</div>
+          <div>©2024 - 2025 г.</div>
+        </div>
+      </div>
+    </footer>
+
+
+    <script src="../asset/js/script.js"></script>
+  </body>
 </html>
